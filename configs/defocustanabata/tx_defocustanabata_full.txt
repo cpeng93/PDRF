@@ -1,0 +1,67 @@
+num_gpu = 1
+expname = defocustanabata1_deblur_two_stage_10pts_update
+basedir = ./log/
+datadir = ../data/synthetic_defocus_blur/defocustanabata
+tbdir = ./log/
+dataset_type = llff
+
+seed = 10000
+factor = 1
+llffhold = 8
+
+N_rand = 1024
+N_samples = 64
+N_importance = 64
+N_iters = 30000
+lrate = 0.01
+lrate_decay = 10
+
+use_viewdirs = True
+raw_noise_std = 1e0
+rgb_activate = sigmoid
+
+mode = c2f
+coarse_num_layers = 2
+coarse_num_layers_color = 3
+coarse_hidden_dim = 64
+coarse_hidden_dim_color = 64
+coarse_app_dim = 32
+coarse_app_n_comp = [64,16,16]
+coarse_n_voxels = 16777248
+
+
+fine_num_layers = 2
+fine_num_layers_color = 3
+fine_hidden_dim = 256
+fine_hidden_dim_color = 256
+fine_geo_feat_dim = 128
+fine_app_dim = 32
+fine_app_n_comp = [64,16,16]
+fine_n_voxels = 134217984
+
+
+kernel_start_iter = 1200
+# kernel_prior_weight = 0.1
+# prior_start_iter = 15000
+kernel_align_weight = 0.1
+align_start_iter = 0
+align_end_iter = 180000
+
+kernel_type = PBE
+kernel_ptnum = 10
+kernel_random_hwindow = 0.15
+kernel_random_mode = input
+
+kernel_img_embed = 32
+kernel_rand_embed = 2  # the in_embed
+kernel_spatial_embed = 2
+kernel_depth_embed = 0
+
+kernel_num_hidden = 4
+kernel_num_wide = 64
+kernel_shortcut
+
+kernel_spatialvariant_trans
+tone_mapping_type = gamma
+
+render_radius_scale = 0.85

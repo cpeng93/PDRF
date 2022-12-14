@@ -1,0 +1,29 @@
+num_gpu = 1
+expname = defocustanabata1_nerf
+basedir = ./log/
+datadir = ../data/synthetic_defocus_blur/defocustanabata
+tbdir = ./log/
+dataset_type = llff
+
+factor = 1
+llffhold = 8
+
+N_rand = 1024
+N_samples = 64
+N_importance = 64
+N_iters = 200000
+lrate = 5e-4
+lrate_decay = 250
+
+use_viewdirs = True
+raw_noise_std = 1e0
+rgb_activate = sigmoid
+
+mode = nerf
+kernel_type = none
+
+render_radius_scale = 0.85
+
+i_weights = 20000
+i_testset = 20000
+i_video = 20000
