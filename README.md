@@ -2,14 +2,14 @@ This is the official implementation of the paper [PDRF: Progressively Deblurring
 Reconstruction from Blurry Images](https://arxiv.org/abs/2208.08049)
 # PDRF
 ![](PDRF_network.png)
-[//]: # (## Method Overview)
+## Method Overview
 Progressively Deblurring Radiance Field (PDRF) is a novel approach to efficiently reconstruct high quality radiance fields from blurry images. Compared to previous methods like NeRF and DeblurNeRF, PDRF is both much faster and more performant by utilizing radiance field features to model blur. 
 
-
 ![](results.png)
-![](PDRF_plot.png)
 
-
+<p align="center">
+  <img src="PDRF_plot.png" />
+</p>
 
 
 
