@@ -7,10 +7,6 @@ Progressively Deblurring Radiance Field (PDRF) is a novel approach to efficientl
 
 ![](results.png)
 
-<p align="center">
-  <img src="PDRF_plot.png" />
-</p>
-
 
 
 ## Quick Start
