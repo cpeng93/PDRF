@@ -8,3 +8,4 @@ matplotlib
 configargparse
 tensorboardX>=2.0
 opencv-python
+kornia
